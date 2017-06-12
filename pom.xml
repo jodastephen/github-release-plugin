@@ -3,7 +3,7 @@
 	<groupId>de.jutzig</groupId>
 	<artifactId>github-release-plugin</artifactId>
 	<packaging>maven-plugin</packaging>
-	<version>1.2.1-SNAPSHOT</version>
+	<version>1.2.1-OG</version>
 	<name>github-release-plugin</name>
 	<description>Maven plugin to create github releases and upload assets to the release</description>
 	<url>https://github.com/jutzig/github-release-plugin</url>
@@ -32,13 +32,9 @@
 	</scm>
 
 	<distributionManagement>
-		<snapshotRepository>
-			<id>ossrh</id>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
-		</snapshotRepository>
 		<repository>
-			<id>ossrh</id>
-			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+			<id>og-private-release</id>
+			<url>https://opengamma.jfrog.io/opengamma/ext-private-releases-local/</url>
 		</repository>
 	</distributionManagement>
 
